@@ -1,4 +1,4 @@
-package com.example.anroidserver.model;
+package com.example.anroidserver.model.rezept;
 
 import com.example.anroidserver.repositories.RezeptRepository;
 import org.springframework.beans.factory.annotation.Autowired;

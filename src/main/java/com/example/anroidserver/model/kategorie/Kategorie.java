@@ -1,4 +1,4 @@
-package com.example.anroidserver.model;
+package com.example.anroidserver.model.kategorie;
 
 import com.sun.istack.NotNull;
 import org.hibernate.annotations.CreationTimestamp;
@@ -23,6 +23,7 @@ public class Kategorie {
     public Kategorie(String name) {
         this.name = name;
     }
+
     public Kategorie() {
 
     }
