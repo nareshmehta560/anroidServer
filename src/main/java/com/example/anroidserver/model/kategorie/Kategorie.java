@@ -1,12 +1,18 @@
 package com.example.anroidserver.model.kategorie;
 
 import com.sun.istack.NotNull;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Date;
+@NoArgsConstructor
+@Getter
+@Setter
 
 @Entity
 public class Kategorie {
@@ -19,36 +25,4 @@ public class Kategorie {
 
     @CreationTimestamp
     private Date erstellungsdatum;
-
-    public Kategorie(String name) {
-        this.name = name;
-    }
-
-    public Kategorie() {
-
-    }
-
-    public int getKategorie_id() {
-        return kategorie_id;
-    }
-
-    public void setKategorie_id(int kategorie_id) {
-        this.kategorie_id = kategorie_id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Date getErstellungsdatum() {
-        return erstellungsdatum;
-    }
-
-    public void setErstellungsdatum(Date erstellungsdatum) {
-        this.erstellungsdatum = erstellungsdatum;
-    }
 }
